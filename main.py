@@ -102,6 +102,7 @@ class MainWidow(Tk, CenterWidgetMixin):
             for column in range(10):
                 self.allLabels.append(KrabbyPatty(row, column, self.foodContainer))
 
+    # To finish the execution of the program
     def FinishProgram(self, something):
         # Resetting buffer positions
         FoodTable.head = 0
@@ -126,6 +127,7 @@ class MainWidow(Tk, CenterWidgetMixin):
         # Unlocking the Start Button
         self.startButton.config(state="normal")
 
+    # To execute the program solution
     def Execute(self):
         # Blocking the Start Button
         self.startButton.config(state="disabled")
@@ -263,7 +265,7 @@ class SpongeBob:
     def Cancel(self):
         self.cancelThis = True
             
-
+# Consumer class
 class BubbleBass:
     def __init__(self, producerSemaphore, consumerSemaphore, infoProducer, infoConsumer):
         self.producerSemaphore = producerSemaphore
