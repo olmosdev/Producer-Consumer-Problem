@@ -282,7 +282,7 @@ class BubbleBass:
             # To know how long the consumer will work
             numberOfKrabbyPatties = random.randrange(1,20)
 
-            signal = True # To handle inserts
+            signal = True # To handle deletions
             counter = 0 # To count seconds
 
             # This is a simple validation when the consumer is the first person to modify the resources area 
